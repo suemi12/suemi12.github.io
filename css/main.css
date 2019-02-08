@@ -142,14 +142,14 @@ width: 30px;
 border-radius: 50%;
 }
 
-.card .btn-primary#btn-1{
+.card .btn-primary#clave{
   margin-left: 45px;
   margin-right: 5px;
   margin-bottom: 20px;
   border-radius: 0px;
 }
 
-.card .btn-primary#btn-2{
+.card .btn-primary#texto{
   margin-right: auto;
   margin-bottom: 20px;
   border-radius: 0px;
@@ -168,7 +168,7 @@ border-radius: 50%;
   color: rgba(10, 206, 206, .7);
 }
 
-.card .card-title#title-2{
+.card .card-title#subtitulo{
   text-align: left;
   font-size: 25px;
   font-weight: bold; 
@@ -207,13 +207,13 @@ hr{
   margin-left: 30px;
 }
 
-.card .btn-primary#btn-1 img{
+.card .btn-primary#clave img{
   width: 20%;
   border-radius: none;
   margin: 0% 0% 0% 0%;
 }
 
-.card .btn-primary#btn-2 img{
+.card .btn-primary#texto img{
   width: 20%;
   border-radius: none;
   margin: 0% 0% 0% 0%;

@@ -8,22 +8,44 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="w-100">&nbsp;</div>
             <div class="col">
-                <div class="list-group">
-                    <button type="button" class="list-group-item list-group-item-action active">
-                        Home
-                    </button>
-                    <button type="button" class="list-group-item list-group-item-action">Resume</button>
-                    <button type="button" class="list-group-item list-group-item-action">Skills</button>
-                    <button type="button" class="list-group-item list-group-item-action">Portfoli</button>
-                    <button type="button" class="list-group-item list-group-item-action">Blog</button>
-                    <button type="button" class="list-group-item list-group-item-action">Contact</button>
-                </div>
+                <form id="add-car-form" action="">
+                        <div class="form-group">
+                            <label for="">Titulo</label>
+                            <input id="title" type="text" class="form-control" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Boton1</label>
+                            <input id="btn1" type="text" class="form-control" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Boton2</label>
+                            <input id="btn2" type="text" class="form-control" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Tipo de texto</label>
+                            <input id="typeText" type="text" class="form-control" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Titulo tarjeta</label>
+                            <input id="titleCard" type="text" class="form-control" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Subtitulo</label>
+                            <input id="subtituloCard" type="text" class="form-control" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Cuerpo</label>
+                            <input id="bodyCard" type="text" class="form-control" value="">
+                        </div>
+                        <div id="submit-button" class="btn btn-success mb-2">Agregar Datos</div>
+                    </form>
             </div>
             <div class="col">
                 <div class="card">
@@ -48,11 +70,11 @@
                 <div class="card">
                     <div class="row">
                         <div class="col">
-                            <h3 id="id-resume">RESUME</h3>
+                            <h3 id="titulo">RESUME</h3>
                             <hr>
                             <div class="row">
-                                <div id="btn-1" class="btn btn-primary"><img src="img/perfil.png">Download</div>
-                                <div id="btn-2" class="btn btn-primary"><img src="img/perfil.png">Get in touch</div>
+                                <div id="clave" class="btn btn-primary"><img src="img/perfil.png">Download</div>
+                                <div id="texto" class="btn btn-primary"><img src="img/perfil.png">Get in touch</div>
                             </div>
                         </div>  
                     </div>
@@ -60,7 +82,7 @@
                         <div class="col">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item" aria-current="page"><img src="img/educacion.png">Education</li>
+                                    <li id="title-2" class="breadcrumb-item" aria-current="page"><img src="img/educacion.png">Education</li>
                                 </ol>
                             </nav>
                         </div>
@@ -69,10 +91,10 @@
                         <div class="col">
                             <div class="card bg-light bg-transparent mb-3">
                                 <div class="card-body">
-                                    <h5 id="title-2" class="card-title">Graphic Design</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <h5 id="subtitulo" class="card-title">Graphic Design</h5>
+                                    <p id="subtitulo2" class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                     <hr>
-                                    <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia modi natus sint beatae, eum sequi quae sapiente, asperiores nemo repellendus perspiciatis possimus. Sit perspiciatis laudantium quos corporis, eveniet, odio at?</p>
+                                    <p id="content" class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia modi natus sint beatae, eum sequi quae sapiente, asperiores nemo repellendus perspiciatis possimus. Sit perspiciatis laudantium quos corporis, eveniet, odio at?</p>
                                 </div>
                             </div>
                         </div>
@@ -81,8 +103,9 @@
             </div>
         </div>
     </div>
-    <script src="js/jquery-3.3.1.min.js"></script>
+   
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
